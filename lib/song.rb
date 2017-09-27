@@ -43,7 +43,7 @@ class Song
 
   def self.find_by_name(name)
     result = nil
-    result = @all.detect {|s| s == name}
+    result = @all.detect {|s| s.name == name}
     result
   end
 end
