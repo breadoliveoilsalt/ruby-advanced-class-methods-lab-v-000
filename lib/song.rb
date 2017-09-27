@@ -41,4 +41,9 @@ class Song
     s
   end
 
+  def self.find_by_name(name)
+    result = nil
+    result = @all.detect {|s| s == name}
+    result
+  end
 end
