@@ -45,6 +45,6 @@ class Song
     # result = nil
     # result = @all.detect {|s| s.name == name}
     # result
-    @all.detect {|s| s.name == name}
+    all.detect {|s| s.name == name}
   end
 end
