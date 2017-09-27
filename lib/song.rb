@@ -19,7 +19,7 @@ class Song
   def self.create(song)
     s = self.new(song)
     #if !self.all.include?(song)
-        binding.pry
+      #  binding.pry
     #self.all << s
     s.save
     #end
