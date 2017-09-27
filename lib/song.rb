@@ -20,8 +20,8 @@ class Song
     s = self.new(song)
     #if !self.all.include?(song)
         binding.pry
-    self.all << s
-
+    #self.all << s
+    s.save
     #end
     s
   end
