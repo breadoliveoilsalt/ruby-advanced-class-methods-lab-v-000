@@ -18,12 +18,19 @@ class Song
 
   def self.create
     s = self.new
-    s.name = name
+    #s.name = name
     #if !self.all.include?(song)
       #  binding.pry
     #self.all << s
     s.save
     #end
+    s
+  end
+
+  def self.new_by_name(name)
+    s = self.new_by_name
+    s.name = name
+    s.save
     s
   end
 
