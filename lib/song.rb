@@ -19,8 +19,9 @@ class Song
   def self.create(song)
     s = self.new(song)
     #if !self.all.include?(song)
+        binding.pry
     self.all << s
-    binding.pry
+
     #end
     s
   end
