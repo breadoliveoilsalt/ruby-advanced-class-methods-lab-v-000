@@ -61,15 +61,15 @@ class Song
     arr = mp3.chomp(".mp3").split(" - ")
     s = self.create_by_name(arr[1])
     s.artist_name = arr[0]
-    s.save
-    s
+    # s.save
+    # s
   end
 
   def self.create_from_filename(mp3)
-    arr = mp3.chomp(".mp3").split(" - ")
-    s = self.create_by_name(arr[1])
-    # s.artist_name = arr[0]
-    s.save
+    # arr = mp3.chomp(".mp3").split(" - ")
+    # s = self.create_by_name(arr[1])
+    # # s.artist_name = arr[0]
+    # s.save
   end
   
 end
