@@ -16,7 +16,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create(name)
+  def self.create
     s = self.new
     s.name = name
     #if !self.all.include?(song)
