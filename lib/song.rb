@@ -2,6 +2,10 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
+  def initialize(name)
+    @name = name    
+  end
+
   def self.all
     @@all
   end
@@ -10,12 +14,12 @@ class Song
     self.class.all << self
   end
 
-  def self.create(song)
-    song = self.new
+  def self.create(name)
+    s = self.new(name)
     if !self.all.include?(song)
-      self.all << song
+      self.all << s
     end
-
+    s
   end
 
 end
